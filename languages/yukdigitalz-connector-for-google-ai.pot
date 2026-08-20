@@ -1,0 +1,59 @@
+# Copyright (C) 2026 shihela
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: YukDigitalz Connector for Google AI 1.0.0\n"
+"Report-Msgid-Bugs-To: https://yukdigitalz.com\n"
+"POT-Creation-Date: 2026-08-17 18:25:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2026-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: yukdigitalz-connector-for-google-ai\n"
+
+#. Plugin Name of the plugin
+msgid "YukDigitalz Connector for Google AI"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://yukdigitalz.com/yukdigitalz-connector-for-google-ai"
+msgstr ""
+
+#. Description of the plugin
+msgid "Dedicated Google AI Studio & Gemini API connector for WordPress: Switch Gemini models dynamically, prevent 503/429 high demand errors with auto-failover, rotate API keys, and track detailed usage analytics cleanly."
+msgstr ""
+
+#. Author of the plugin
+msgid "shihela"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://yukdigitalz.com"
+msgstr ""
+
+#: includes/Admin/class-admin-menu.php:59
+msgid "YukDigitalz Connector for Google AI"
+msgstr ""
+
+#: includes/Admin/class-admin-menu.php:60
+msgid "YukDigitalz Connector AI"
+msgstr ""
+
+#: includes/Admin/class-admin-menu.php:113
+msgid "Saving settings..."
+msgstr ""
+
+#: includes/Admin/class-admin-menu.php:114
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: includes/Admin/class-admin-menu.php:115
+msgid "Testing Google Gemini API connectivity..."
+msgstr ""
+
+#: includes/Admin/class-admin-menu.php:116
+msgid "Fetching latest models from Google AI Studio..."
+msgstr ""

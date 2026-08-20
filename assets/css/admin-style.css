@@ -1,0 +1,866 @@
+/**
+ * YukDigitalz AI Connectors - Enterprise Admin Styles
+ * Modern, clean, enterprise dashboard aesthetic.
+ */
+
+:root {
+	--yuk-primary: #3b82f6;
+	--yuk-primary-hover: #2563eb;
+	--yuk-primary-dark: #1d4ed8;
+	--yuk-success: #10b981;
+	--yuk-success-bg: #ecfdf5;
+	--yuk-warning: #f59e0b;
+	--yuk-warning-bg: #fffbeb;
+	--yuk-danger: #ef4444;
+	--yuk-danger-bg: #fef2f2;
+	--yuk-dark: #0f172a;
+	--yuk-slate-800: #1e293b;
+	--yuk-slate-700: #334155;
+	--yuk-slate-600: #475569;
+	--yuk-slate-500: #64748b;
+	--yuk-slate-400: #94a3b8;
+	--yuk-slate-200: #e2e8f0;
+	--yuk-slate-100: #f1f5f9;
+	--yuk-slate-50: #f8fafc;
+	--yuk-card-border: #e2e8f0;
+	--yuk-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--yuk-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--yuk-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+	--yuk-radius: 10px;
+}
+
+.yuk-ai-wrap {
+	max-width: 1280px;
+	margin: 20px 20px 40px 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	color: var(--yuk-slate-800);
+}
+
+/* Header & Branding */
+.yuk-ai-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+	color: #fff;
+	padding: 24px 30px;
+	border-radius: var(--yuk-radius);
+	box-shadow: var(--yuk-shadow-lg);
+	margin-bottom: 20px;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.yuk-ai-brand {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.yuk-ai-logo-badge {
+	width: 52px;
+	height: 52px;
+	background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+	border-radius: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.yuk-ai-logo-badge svg {
+	width: 28px;
+	height: 28px;
+	display: block;
+	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+
+.yuk-ai-wrap .yuk-ai-header .yuk-ai-brand-info h1,
+.yuk-ai-wrap .yuk-ai-header .yuk-ai-brand-info h2,
+.yuk-ai-brand-info h1,
+.yuk-ai-brand-info h2 {
+	color: #ffffff !important;
+	font-size: 22px !important;
+	font-weight: 700 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 10px !important;
+	line-height: 1.2 !important;
+}
+
+.yuk-ai-version-tag {
+	font-size: 11px;
+	font-weight: 600;
+	background: rgba(255, 255, 255, 0.15);
+	padding: 2px 8px;
+	border-radius: 20px;
+	color: #93c5fd !important;
+	letter-spacing: 0.5px;
+}
+
+.yuk-ai-wrap .yuk-ai-header .yuk-ai-brand-info .yuk-ai-tagline,
+.yuk-ai-tagline {
+	margin: 6px 0 0 0 !important;
+	color: #94a3b8 !important;
+	font-size: 13px !important;
+}
+
+
+.yuk-ai-status-pill-group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.yuk-ai-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 14px;
+	border-radius: 30px;
+	font-size: 12px;
+	font-weight: 600;
+	background: rgba(255, 255, 255, 0.1);
+	color: #e2e8f0;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(4px);
+}
+
+.yuk-ai-pill-active {
+	background: rgba(16, 185, 129, 0.2);
+	color: #6ee7b7;
+	border-color: rgba(16, 185, 129, 0.4);
+}
+
+.yuk-ai-pill-warning {
+	background: rgba(245, 158, 11, 0.2);
+	color: #fcd34d;
+	border-color: rgba(245, 158, 11, 0.4);
+}
+
+.yuk-ai-pill-model {
+	background: rgba(59, 130, 246, 0.2);
+	color: #93c5fd;
+	border-color: rgba(59, 130, 246, 0.4);
+}
+
+.yuk-ai-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: currentColor;
+	box-shadow: 0 0 8px currentColor;
+}
+
+/* Nav Tabs */
+.yuk-ai-nav-tabs {
+	margin-bottom: 25px;
+	border-bottom: 2px solid var(--yuk-slate-200);
+	display: flex;
+	gap: 6px;
+}
+
+.yuk-ai-nav-tabs .nav-tab {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 10px 18px;
+	font-size: 13px;
+	font-weight: 600;
+	border-radius: 8px 8px 0 0;
+	border: 1px solid transparent;
+	border-bottom: none;
+	background: transparent;
+	color: var(--yuk-slate-600);
+	transition: all 0.2s ease;
+}
+
+.yuk-ai-nav-tabs .nav-tab:hover {
+	color: var(--yuk-primary);
+	background: var(--yuk-slate-100);
+}
+
+.yuk-ai-nav-tabs .nav-tab-active {
+	background: #fff;
+	color: var(--yuk-primary);
+	border-color: var(--yuk-slate-200);
+	border-top: 3px solid var(--yuk-primary);
+	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.02);
+}
+
+/* Cards & Layout */
+.yuk-ai-grid {
+	display: grid;
+	gap: 20px;
+	margin-bottom: 25px;
+}
+
+.yuk-ai-grid-metrics {
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.yuk-ai-grid-2col {
+	grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+	.yuk-ai-grid-2col {
+		grid-template-columns: 1fr;
+	}
+}
+
+.yuk-ai-grid-3col {
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.yuk-ai-card {
+	background: #fff;
+	border: 1px solid var(--yuk-card-border);
+	border-radius: var(--yuk-radius);
+	box-shadow: var(--yuk-shadow-sm);
+	padding: 24px;
+	margin-bottom: 20px;
+	transition: box-shadow 0.2s ease;
+}
+
+.yuk-ai-card:hover {
+	box-shadow: var(--yuk-shadow-md);
+}
+
+.yuk-ai-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--yuk-slate-100);
+	padding-bottom: 14px;
+	margin-bottom: 18px;
+}
+
+.yuk-ai-card-header h2 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--yuk-dark);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+/* Metric Cards */
+.yuk-ai-metric-card {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 20px;
+}
+
+.yuk-ai-metric-icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.yuk-ai-icon-blue { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.yuk-ai-icon-green { background: linear-gradient(135deg, #10b981, #059669); }
+.yuk-ai-icon-purple { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+.yuk-ai-icon-orange { background: linear-gradient(135deg, #f59e0b, #d97706); }
+
+.yuk-ai-metric-value {
+	font-size: 26px;
+	font-weight: 800;
+	color: var(--yuk-dark);
+	line-height: 1.2;
+}
+
+.yuk-ai-metric-value small {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--yuk-slate-500);
+}
+
+.yuk-ai-metric-label {
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--yuk-slate-500);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-top: 2px;
+}
+
+/* Pipeline Diagram */
+.yuk-ai-pipeline-diagram {
+	background: var(--yuk-slate-50);
+	border: 1px dashed var(--yuk-slate-200);
+	border-radius: 8px;
+	padding: 20px;
+	margin-top: 15px;
+}
+
+.yuk-ai-pipeline-step {
+	background: #fff;
+	border: 1px solid var(--yuk-slate-200);
+	border-radius: 8px;
+	padding: 14px 18px;
+	position: relative;
+	box-shadow: var(--yuk-shadow-sm);
+}
+
+.yuk-ai-step-primary {
+	border-left: 5px solid var(--yuk-primary);
+}
+
+.yuk-ai-step-backup {
+	border-left: 5px solid #8b5cf6;
+}
+
+.yuk-ai-step-badge {
+	font-size: 10px;
+	font-weight: 700;
+	color: var(--yuk-slate-500);
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+}
+
+.yuk-ai-step-name {
+	font-size: 15px;
+	font-weight: 700;
+	color: var(--yuk-dark);
+	margin: 2px 0;
+}
+
+.yuk-ai-step-status {
+	font-size: 12px;
+	color: var(--yuk-slate-500);
+}
+
+.yuk-ai-pipeline-arrow {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px 0;
+	color: var(--yuk-slate-400);
+}
+
+.yuk-ai-failover-trigger-badge {
+	font-size: 11px;
+	font-weight: 600;
+	background: var(--yuk-warning-bg);
+	color: #b45309;
+	padding: 2px 8px;
+	border-radius: 12px;
+	border: 1px solid #fde68a;
+	margin-top: 2px;
+}
+
+/* Model Cards Grid */
+.yuk-ai-models-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 14px;
+	margin-top: 15px;
+}
+
+.yuk-ai-model-card {
+	background: #fff;
+	border: 2px solid var(--yuk-slate-200);
+	border-radius: 8px;
+	padding: 16px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+.yuk-ai-model-card:hover {
+	border-color: #93c5fd;
+	transform: translateY(-2px);
+	box-shadow: var(--yuk-shadow-md);
+}
+
+.yuk-ai-model-card-active {
+	border-color: var(--yuk-primary) !important;
+	background: #f0f7ff;
+	box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.yuk-ai-model-card-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.yuk-ai-model-pill {
+	font-size: 10px;
+	font-weight: 700;
+	background: #e0f2fe;
+	color: #0369a1;
+	padding: 2px 8px;
+	border-radius: 10px;
+}
+
+.yuk-ai-speed-tag {
+	font-size: 11px;
+	font-weight: 600;
+	color: var(--yuk-success);
+}
+
+.yuk-ai-model-card-title {
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--yuk-dark);
+}
+
+.yuk-ai-model-card-id code {
+	font-size: 11px;
+	background: rgba(0, 0, 0, 0.04);
+	padding: 2px 6px;
+	border-radius: 4px;
+	color: var(--yuk-slate-600);
+}
+
+.yuk-ai-model-card-desc {
+	font-size: 12px;
+	color: var(--yuk-slate-500);
+	margin-top: 8px;
+	line-height: 1.4;
+}
+
+/* Providers Accordion & Box */
+.yuk-ai-providers-accordion {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-top: 15px;
+}
+
+.yuk-ai-provider-box {
+	background: var(--yuk-slate-50);
+	border: 1px solid var(--yuk-slate-200);
+	border-radius: 8px;
+	padding: 16px 20px;
+	transition: all 0.2s ease;
+}
+
+.yuk-ai-box-connected {
+	border-left: 4px solid #10b981;
+	background: #f8fafc;
+}
+
+.yuk-ai-provider-box:hover {
+	background: #fff;
+	border-color: #cbd5e1;
+	box-shadow: var(--yuk-shadow-sm);
+}
+
+.yuk-ai-provider-box-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.yuk-ai-provider-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--yuk-dark);
+}
+
+.yuk-ai-provider-box-body {
+	padding-left: 28px;
+}
+
+/* Fallback Sortable List */
+.yuk-ai-sortable-list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.yuk-ai-fallback-row {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	background: var(--yuk-slate-50);
+	border: 1px solid var(--yuk-slate-200);
+	padding: 10px 14px;
+	border-radius: 8px;
+}
+
+.yuk-ai-drag-handle {
+	cursor: move;
+	color: var(--yuk-slate-400);
+}
+
+.yuk-ai-fallback-priority {
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--yuk-slate-600);
+	min-width: 24px;
+}
+
+/* Form Styles */
+.yuk-ai-form-group {
+	margin-bottom: 18px;
+}
+
+.yuk-ai-form-group label {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	color: var(--yuk-dark);
+	margin-bottom: 6px;
+}
+
+.yuk-ai-label-help {
+	font-weight: normal;
+	color: var(--yuk-slate-500);
+	font-size: 12px;
+}
+
+.yuk-ai-input-with-button {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.yuk-ai-input-code {
+	font-family: monospace;
+	letter-spacing: 0.5px;
+}
+
+.yuk-ai-select-lg {
+	font-size: 14px !important;
+	padding: 8px 12px !important;
+	height: auto !important;
+	border-radius: 6px !important;
+}
+
+.yuk-ai-checkbox-item {
+	display: block;
+	background: var(--yuk-slate-50);
+	border: 1px solid var(--yuk-slate-200);
+	padding: 12px 16px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.yuk-ai-checkbox-item:hover {
+	background: #fff;
+	border-color: var(--yuk-primary);
+}
+
+.yuk-ai-checkbox-item p {
+	margin: 4px 0 0 24px;
+	font-size: 12px;
+	color: var(--yuk-slate-500);
+}
+
+/* Switch */
+.yuk-ai-switch {
+	position: relative;
+	display: inline-block;
+	width: 46px;
+	height: 24px;
+}
+
+.yuk-ai-switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.yuk-ai-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #cbd5e1;
+	transition: .3s;
+	border-radius: 24px;
+}
+
+.yuk-ai-slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: .3s;
+	border-radius: 50%;
+}
+
+input:checked + .yuk-ai-slider {
+	background-color: var(--yuk-primary);
+}
+
+input:checked + .yuk-ai-slider:before {
+	transform: translateX(22px);
+}
+
+/* Notices & Alerts */
+.yuk-ai-notice-inline {
+	display: flex;
+	gap: 12px;
+	padding: 14px 18px;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	align-items: flex-start;
+}
+
+.yuk-ai-notice-info {
+	background: #eff6ff;
+	border: 1px solid #bfdbfe;
+	color: #1e40af;
+}
+
+.yuk-ai-notice-warning {
+	background: var(--yuk-warning-bg);
+	border: 1px solid #fde68a;
+	color: #92400e;
+}
+
+.yuk-ai-badge-secure {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 11px;
+	font-weight: 700;
+	background: #ecfdf5;
+	color: #065f46;
+	padding: 4px 10px;
+	border-radius: 20px;
+	border: 1px solid #a7f3d0;
+}
+
+/* Health List */
+.yuk-ai-health-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+.yuk-ai-health-list li {
+	display: flex;
+	gap: 14px;
+	padding: 12px 0;
+	border-bottom: 1px solid var(--yuk-slate-100);
+	align-items: flex-start;
+}
+
+.yuk-ai-health-icon {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.yuk-ai-health-ok {
+	background: #d1fae5;
+	color: #059669;
+}
+
+.yuk-ai-health-bad {
+	background: #fee2e2;
+	color: #dc2626;
+}
+
+.yuk-ai-health-content strong {
+	font-size: 13px;
+	color: var(--yuk-dark);
+}
+
+.yuk-ai-health-content p {
+	margin: 2px 0 0 0;
+	font-size: 12px;
+	color: var(--yuk-slate-500);
+}
+
+.yuk-ai-quick-test-box {
+	margin: 20px 0;
+}
+
+.yuk-ai-test-feedback-box {
+	margin-top: 10px;
+	padding: 10px 14px;
+	border-radius: 6px;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.yuk-ai-cta-links {
+	display: flex;
+	gap: 10px;
+	margin-top: 15px;
+	flex-wrap: wrap;
+}
+
+/* Playground Layout */
+.yuk-ai-playground-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+@media (max-width: 990px) {
+	.yuk-ai-playground-layout {
+		grid-template-columns: 1fr;
+	}
+}
+
+.yuk-ai-playground-quick-prompts {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	flex-wrap: wrap;
+}
+
+.yuk-ai-quick-label {
+	font-size: 11px;
+	color: var(--yuk-slate-500);
+	font-weight: 600;
+}
+
+.yuk-ai-textarea-code {
+	font-family: inherit;
+	font-size: 14px !important;
+	line-height: 1.5 !important;
+	border-radius: 8px !important;
+	padding: 12px !important;
+}
+
+.yuk-ai-accordion {
+	border: 1px solid var(--yuk-slate-200);
+	border-radius: 8px;
+	margin: 15px 0;
+	overflow: hidden;
+}
+
+.yuk-ai-accordion-header {
+	background: var(--yuk-slate-50);
+	padding: 10px 14px;
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.yuk-ai-accordion-content {
+	display: none;
+	padding: 14px;
+	background: #fff;
+	border-top: 1px solid var(--yuk-slate-200);
+}
+
+.yuk-ai-output-badges {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#yuk-ai-response-container {
+	min-height: 220px;
+	padding: 16px;
+	background: var(--yuk-slate-50);
+	border-radius: 8px;
+	border: 1px solid var(--yuk-slate-200);
+	font-size: 14px;
+	line-height: 1.6;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.yuk-ai-empty-state {
+	text-align: center;
+	padding: 40px 20px;
+	color: var(--yuk-slate-400);
+}
+
+.yuk-ai-empty-state span.dashicons {
+	font-size: 40px;
+	width: 40px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+.yuk-ai-json-summary {
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--yuk-slate-600);
+	cursor: pointer;
+}
+
+.yuk-ai-json-viewer {
+	background: var(--yuk-slate-800);
+	color: #38bdf8;
+	padding: 14px;
+	border-radius: 8px;
+	font-size: 12px;
+	max-height: 300px;
+	overflow: auto;
+}
+
+/* Badges & Tables */
+.yuk-ai-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 3px 8px;
+	border-radius: 12px;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.yuk-ai-badge-success { background: #dcfce7; color: #15803d; }
+.yuk-ai-badge-warning { background: #fef3c7; color: #b45309; }
+.yuk-ai-badge-danger { background: #fee2e2; color: #b91c1c; }
+
+.yuk-ai-latency-tag {
+	font-size: 11px;
+	font-weight: 700;
+	background: var(--yuk-slate-100);
+	padding: 2px 6px;
+	border-radius: 4px;
+	color: var(--yuk-slate-700);
+}
+
+.yuk-ai-code-block {
+	background: var(--yuk-slate-800);
+	color: #e2e8f0;
+	padding: 16px;
+	border-radius: 8px;
+	font-size: 12px;
+	line-height: 1.5;
+	overflow-x: auto;
+	margin: 10px 0 20px 0;
+}
+
+.yuk-ai-code-block code {
+	background: transparent;
+	color: inherit;
+	padding: 0;
+}
